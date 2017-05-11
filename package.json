@@ -1,0 +1,19 @@
+{
+  "name": "teste-tdd",
+  "version": "1.0.0",
+  "description": "projeto de teste para tdd",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "should": "^11.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha -w tests/**/*.js",
+    "coverage": "istanbul cover _mocha tests/**/*.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
