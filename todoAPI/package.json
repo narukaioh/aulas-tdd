@@ -19,6 +19,7 @@
     "chai": "^3.5.0",
     "glob": "^7.1.1",
     "mongoose": "^4.9.8",
+    "should": "^11.2.1",
     "sinon": "^2.2.0",
     "sinon-mongoose": "^2.0.1"
   }

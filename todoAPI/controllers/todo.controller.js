@@ -24,5 +24,16 @@ const TodoCtrl = {
 
 		})
 	},
-	updateTodo: function(req, res, next){}
+	updateTodo: function(req, res, next){
+		var completed = req.body.completed;
+		Todo.findById(req.params.id, function(err, todo){
+			todo.completed = completed
+			todo.save(function(err, todo){
+				if (err) { res.json({status: false, error: "Status not updated"}) }
+				res.json({status: true, message: "Status updated successfully"})
+			})
+		})
+	}
 }
+
+module.exports = TodoCtrl
